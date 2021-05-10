@@ -101,7 +101,7 @@ const getUser = ( formData ) => {
 }
 
 /**
- * Метод получения данных юзера из бд
+ * Метод обнолвения данных юзера
  * @param {Object} formData
  * @param {String} [formData.login]
  * @param {String} [formData.password]
