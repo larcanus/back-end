@@ -1,3 +1,3 @@
 server and modules for my SPA test
-
-https://www.justittry.ru
+ 
+Main dependencies: PostgreSQL and KNEX.js 
