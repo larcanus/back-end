@@ -1,4 +1,8 @@
-module.exports = class QueryBilder {
+'use strict'
+
+console.log( 'queryBilder')
+
+class QueryBilder {
 
     constructor( config ) {
         this.bilder = config;
@@ -49,7 +53,6 @@ module.exports = class QueryBilder {
      */
     update( param ) {
         if ( param?.filter && param?.address && param?.data ) {
-            console.log( param )
             return this.bilder( param.address )
                 .where( param.filter )
                 .update( param.data )
@@ -62,7 +65,6 @@ module.exports = class QueryBilder {
                 } );
         }
     }
-
-
 }
 
+module.exports = QueryBilder
